@@ -1,8 +1,8 @@
 # 📊 Social Media Sentiment Dashboard
 
-A Streamlit web app that analyzes sentiment in product or social media reviews using VADER NLP.
+A Streamlit web app for analyzing sentiment in product or social media reviews using the VADER NLP toolkit.
 
-It classifies text as:
+The app classifies each review as:
 - 👍 Positive
 - 😐 Neutral
 - 👎 Negative
@@ -11,11 +11,11 @@ It classifies text as:
 
 ## 🚀 Features
 
-- Upload CSV or use sample dataset
-- Real-time sentiment classification
-- Interactive charts
-- Clean Streamlit UI
-- Lightweight NLP using VADER
+- Upload your own CSV file or use a built-in sample dataset
+- Real-time sentiment analysis of textual data
+- Interactive sentiment distribution charts
+- Clean and intuitive Streamlit UI
+- Efficient, lightweight NLP processing with VADER
 
 ---
 
@@ -28,4 +28,21 @@ It classifies text as:
 
 ---
 
-## 📂 Project Structure
+## ▶️ How to Run
+
+1. **Install dependencies:**
+   ```bash
+   python3 -m pip install streamlit pandas nltk
+   ```
+
+2. **Download VADER lexicon for NLTK (required for sentiment analysis):**
+   ```bash
+   python -c "import nltk; nltk.download('vader_lexicon')"
+   ```
+
+3. **Start the Streamlit app:**
+   ```bash
+   python -m streamlit run app.py
+   ```
+
+The dashboard will open in your browser. You can upload a CSV file with a `review` column, or use the sample data provided.
