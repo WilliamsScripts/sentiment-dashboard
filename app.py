@@ -2,9 +2,7 @@ import streamlit as st
 import pandas as pd
 from src.sentiment import get_sentiment
 from src.data_loader import load_data
-# import nltk
 
-# nltk.download("vader_lexicon")
 st.set_page_config(page_title="Sentiment Dashboard", layout="wide")
 
 st.title("📊 Social Media Sentiment Dashboard")
